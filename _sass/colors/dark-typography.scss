@@ -4,24 +4,25 @@
 
 @mixin dark-scheme {
   /* Framework color */
-  --body-bg: var(--main-bg);
+  --body-bg: var(--main-wrapper-bg);
   --mask-bg: rgb(68, 69, 70);
-  --main-bg: rgb(27, 27, 30);
+  --main-wrapper-bg: rgb(27, 27, 30);
   --main-border-color: rgb(44, 45, 45);
 
   /* Common color */
-  --text-color: rgb(175, 176, 177);
+  --text-color: rgb(240, 240, 240);
   --text-muted-color: rgb(107, 116, 124);
   --heading-color: #cccccc;
-  --blockquote-border-color: rgb(66, 66, 66);
-  --blockquote-text-color: rgb(117, 117, 117);
+  --blockquote-border-color: #87e3c0;
+  --blockquote-text-color: rgb(200, 200, 200);
+  --blockquote-background-color: #292929;
   --link-color: rgb(138, 180, 248);
   --link-underline-color: rgb(82, 108, 150);
   --button-bg: rgb(39, 40, 43);
   --btn-border-color: rgb(63, 65, 68);
   --btn-backtotop-color: var(--text-color);
   --btn-backtotop-border-color: var(--btn-border-color);
-  --btn-box-shadow: var(--main-bg);
+  --btn-box-shadow: var(--main-wrapper-bg);
   --card-header-bg: rgb(51, 50, 50);
   --label-color: rgb(108, 117, 125);
   --checkbox-color: rgb(118 120 121);
@@ -64,7 +65,7 @@
   --relate-post-date: var(--text-muted-color);
   --card-bg: rgb(39, 40, 43);
   --card-border-color: rgb(53, 53, 60);
-  --card-box-shadow: var(--main-bg);
+  --card-box-shadow: var(--main-wrapper-bg);
   --preview-img-bg: radial-gradient(circle, rgb(22 22 24) 0%, rgb(32 32 32) 100%);
   --kbd-wrap-color: #6a6a6a;
   --kbd-text-color: #d3d3d3;
