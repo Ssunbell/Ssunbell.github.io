@@ -37,7 +37,7 @@ BERT의 문제점을 보완하고자 RoBERTa가 나왔고, 실제로 RoBERTa를 
 |입력데이터|Inputs are two concatenated document segments|Inputs are sentence sequences that may span document boundaries|
 |다음문장예측|Next Sentence Prediction|No NSP|
 |batch_size|256|2,000|
-|토큰화|Word-piece tokenization|Character-level byte-pair encoding|
+|토큰화|Word-piece tokenization|Byte-level byte-pair encoding|
 |데이터|BookCorpus and English Wikipedia|BookCorpus, CC-New, OpneWebText, Stories|
 |시간길이|1M(1,000,000) steps|500K(500,000) steps|
 |최적화|Train on short sequences first|Train only on full-length sequences|
@@ -111,8 +111,8 @@ BERT는 256 사이즈의 배치 사이즈를 설정했지만, RoBERTa에서는 2
     - 구글에서는 이를 `WordPiece Tokenizer`라는 토큰화 기법을 BERT에 사용한다.
 
 2. RoBERTa
-    - RoBERTa에서는 BPE Tokenizer를 사용하며, 빈도수 기반의 방법론을 사용한다.
-    - 이러한 BPE Tokenizer는 openAI에서 GPT에 적용되는 토크나이저와 동일한 토크나이저를 사용한다.
+    - RoBERTa에서는 BBPE Tokenizer를 사용하며, 빈도수 기반의 방법론을 사용한다.
+    - 이러한 BBPE Tokenizer는 openAI에서 GPT에 적용되는 토크나이저와 동일한 토크나이저를 사용한다.
 
 ### 6. Data
 > 데이터 크기
