@@ -1,6 +1,8 @@
 /*
   The common styles
 */
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
 
 html {
   @media (prefers-color-scheme: light) {
@@ -29,11 +31,11 @@ html {
 }
 
 body {
-  line-height: 1.75rem;
+  line-height: 2.7rem;
   background: var(--body-bg);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
-  font-family: 'Dongle', sans-serif;
+  font-family: 'Nanum Gothic Coding', monospace, sans-serif;
 }
 
 /* --- Typography --- */
@@ -41,7 +43,7 @@ body {
 h1 {
   @extend %heading;
 
-  font-size: 1.9rem;
+  font-size: 2.3rem;
 }
 
 h2 {
@@ -49,7 +51,7 @@ h2 {
   @extend %section;
   @extend %anchor;
 
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 h3 {
@@ -57,7 +59,7 @@ h3 {
   @extend %section;
   @extend %anchor;
 
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 h4 {
@@ -65,7 +67,7 @@ h4 {
   @extend %section;
   @extend %anchor;
 
-  font-size: 1.15rem;
+  font-size: 1.2rem;
 }
 
 h5 {
@@ -80,7 +82,7 @@ ol,
 ul {
   ol,
   ul {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -112,7 +114,7 @@ blockquote {
 
     &::before {
       margin-right: 1rem;
-      font-family: "Font Awesome 5 Free";
+      font-family: 'Jua';
       text-align: center;
       width: 1.25rem;
     }
@@ -132,10 +134,10 @@ blockquote {
 }
 
 kbd {
-  font-family: inherit;
+  font-family:'Jua';
   display: inline-block;
   vertical-align: middle;
-  line-height: 1.3rem;
+  line-height: 10rem;
   min-width: 1.75rem;
   text-align: center;
   margin: 0 0.3rem;
@@ -499,12 +501,12 @@ img[data-src] {
 
   > ol,
   > ul {
-    padding-left: 2rem;
+    padding-left: 2.5rem;
 
     li {
       ol,
       ul { /* sub list */
-        padding-left: 2rem;
+        padding-left: 2.5rem;
         margin-top: 0.3rem;
       }
     }
@@ -1047,7 +1049,7 @@ $sidebar-display: "sidebar-display";
   display: none;
   font-size: 1.1rem;
   font-weight: 600;
-  font-family: sans-serif;
+  font-family: 'Jua';
   color: var(--topbar-text-color);
   text-align: center;
   width: 70%;
