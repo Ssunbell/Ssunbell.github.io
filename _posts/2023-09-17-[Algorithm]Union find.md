@@ -1,4 +1,5 @@
 ---
+published: true
 title:  "[Algorithm] Union Find 구현"
 date: '2023-09-17 16:59:00 +09:00'
 category: [CS, Algorithm]
